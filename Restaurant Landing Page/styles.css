@@ -1,0 +1,139 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff8f2;
+  color: #2f9f74;
+}
+
+nav {
+  background-color: #2e5c44;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #f7e8dc;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd2a2;
+}
+
+section {
+  padding: 80px 20px;
+  background-color: #fffaf5;
+  text-align: center;
+}
+
+section:nth-child(even) {
+  background-color: #fdf1e6;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #d2691e;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+img {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  margin: 30px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.menu-grid {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.menu-item {
+  background: #fff;
+  width: 240px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  border-radius: 10px;
+  height: 160px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.menu-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #5c3d2e;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+form input, form button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  background: #d2691e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #c15614;
+}
+
+footer {
+  background: #2e5c4d;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .menu-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
